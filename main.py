@@ -43,6 +43,7 @@ def main():
                     f"📊 *Давление:* {current_data['pressure']}\n"
                     f"💧 *Влажность:* {current_data['humidity']}\n\n#погода #СПб"
                 )
+                # Синхронная отправка сообщения
                 bot.send_message(chat_id=CHANNEL_ID, text=message, parse_mode='Markdown')
                 last_data = current_data
                 print("Отправлено обновление")
