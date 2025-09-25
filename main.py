@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from telegram import Bot
+import telegram
 from datetime import datetime
 import time
 
@@ -8,7 +8,7 @@ BOT_TOKEN = "8497876910:AAGLopwWA3mnpYIsGk3NH4IJS754ulH84v0"
 CHANNEL_ID = "-1002955948611"
 
 last_data = None
-bot = Bot(token=BOT_TOKEN)
+bot = telegram.Bot(token=BOT_TOKEN)
 
 RUSSIAN_MONTHS = {1: 'января', 2: 'февраля', 3: 'марта', 4: 'апреля', 5: 'мая', 6: 'июня', 
                   7: 'июля', 8: 'августа', 9: 'сентября', 10: 'октября', 11: 'ноября', 12: 'декабря'}
